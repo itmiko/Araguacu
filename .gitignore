@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+/design/
+/.git/
+/**/*.psd
+/**/Thumbs.db
+/**/*.DS_Store
+*.jpg
+*.txt
+*.sketch
+*.zip
