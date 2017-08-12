@@ -51,4 +51,201 @@ body
 	max-width: 100%
 	height: auto
 
+// .fotorama
+// 	opacity: .9
+.fotorama__stage .fotorama__img
+	left: 0!important
+	width: 100%!important
+	// position: relative
+	// opacity: .9
+	// background-color:rgba(0,0,0,0.5)!important
+
+		&::before
+		// opacity: .3
+		// z-index: 5
+		// content: ""
+		// position: absolute
+		// width: 100%
+		// height: 100%
+		// background: rgba(0,0,0,0.4)
+
+
+
+.fotorama
+	&__nav
+		top: -96px
+		&-wrap
+			// position: absolute
+			padding: 0 220px
+			width: 100%
+	// &__thumb
+		// border: 5px solid black
+	&__arr-
+		&-next, &-prev
+			&::before
+				// color: #fff
+				font-family: fontawesome
+				font-size: 52px
+		&-next
+			&::before
+				content: '\f105'
+		&-prev
+			&::before
+				content: '\f104'
+// .section-gallery img
+// 	background-size: cover
+
+// .fotorama__nav__frame fotorama__nav__frame--thumb
+// 	&:hover
+// 			opacity: .3
+// 		transform: scale(1.05)
+.top-line
+	padding-top: 50px
+	position: absolute
+	width: 100%
+	z-index: 3
+	.logo
+		img
+			width: 40px
+			height: auto
+			margin-left: 45px
+			transition: all .3s ease
+
+			&:hover
+				transform: scale(1.1)
+				transition: all .3s ease
+
+.hamburger
+	right: 35px
+	position: absolute
+	color: $white
+	// top: 60px
+	&:hover
+		opacity: 1
+	.hamburger-box
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			border-radius: 0
+			color: $white
+			background-color: $white
+			// &:hover
+			// 	color: $blue
+			// 	background-color: $blue
+.header-title
+	position: absolute	
+	width: 100%
+	text-align: center
+	top: 40%
+	z-index: 3
+	h1, h2
+		font-size: 56px	
+		padding: 0	
+		margin: 0	
+		color: $white
+		text-transform: uppercase
+		line-height: 46px
+
+	h2
+		color: $yellow
+		font-size: 26px
+		margin-bottom: 36px
+
+		
+a.button
+	text-decoration: none
+	color: $white
+	text-transform: none
+	padding: 12px 22px
+	background-color: $green
+	transition: all .4s ease
+	&:hover
+		background-color: $blue
+		transition: all .4s ease
+
+//upcomming section
+.upcoming
+	height: 600px
+	margin-top: -126px
+	background-repeat: no-repeat
+	text-align: center
+	border-bottom: 1px solid $silver
+	.up-wrapper
+		.mid-line
+			position: absolute
+			top: 110px
+			width: 100%
+			z-index: 3
+			h3, .button
+				position: absolute
+			h3
+				color: $blue
+			span
+				color: $grey
+				font-size: 12px
+			.button
+				right: 25px
+				top: 6px
+		.img-wrap
+			margin-top: 194px
+			.img-item
+				display: inline-block
+				transition: all .4s ease
+				position: relative
+				font-family: $second-font
+				&:hover 
+					transform: scale(1.1)
+					transition: all .4s ease
+					z-index: 4
+
+				img
+					padding: 0
+					margin: 0
+					position: relative
+				.img-title
+					position: absolute
+					color: $white
+					line-height: 0
+					letter-spacing: 1px
+					bottom: 40px
+					left: 30px
+					h4
+						text-align: left
+						font-size: 15px
+						font-weight: 600
+					h5
+						margin: 0
+						text-align: left
+						font-size: 12px
+						font-weight: 400
+
+
+//instagram section
+.instagram
+	padding-top: 20px
+	.title-inst
+		text-align: center
+	.fotos
+		padding-top: 30px
+	.foto
+		display: inline-block
+		margin: auto
+		text-align: center
+		width: 265px
+		min-height: 250px
+		background-size: cover
+		position: relative
+		&:hover 
+			transform: scale(1.1)
+			transition: all .4s ease
+.section-overley
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		background-color: $grey
+		opacity: .90
+
+
 @import "media" // Всегда в конце
